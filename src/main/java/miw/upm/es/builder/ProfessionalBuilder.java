@@ -7,6 +7,9 @@ public class ProfessionalBuilder {
 	public ProfessionalBuilder(long phone) {
         this.professional = new Professional(phone);
     }
+	public ProfessionalBuilder() {
+        this(0);
+    }
 	
 	public ProfessionalBuilder phone(long phone) {
 		professional.setPhone(phone);

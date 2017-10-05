@@ -9,7 +9,6 @@ public class Professional {
 	private String type;
 	
 	public Professional(long phone) {
-        assert phone != 0;
         this.phone = phone;
     }
 	
