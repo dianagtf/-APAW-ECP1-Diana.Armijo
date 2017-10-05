@@ -3,7 +3,7 @@ echo -----------------------------------------
 echo . (C) MIW -UPM
 echo -----------------------------------------
 echo .
-set workspace=C:\Users\Diana\workspaceAPAW\APAW-ECP1-Diana.Armijo\scripts
+set workspace=C:\Users\Diana\workspaceAPAW\APAW-ECP1-Diana.Armijo
 echo .
 cd %workspace%
 echo ============ mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify --settings settings.xml ... ==================
