@@ -10,7 +10,6 @@ public class Order {
 	public Calendar date;
 	public BigDecimal amount;
 	
-
 	private Professional professional;
 
     public Order() {
@@ -33,8 +32,12 @@ public class Order {
         return date;
     }
     
-    public void setAmount(int amount) {
-        this.id = amount;
+    public void setDate(Calendar date) {
+    	this.date = Calendar.getInstance();
+    }
+    
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 
     public BigDecimal getAmount() {
