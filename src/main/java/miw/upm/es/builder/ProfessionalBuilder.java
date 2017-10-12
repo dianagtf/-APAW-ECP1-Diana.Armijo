@@ -1,16 +1,17 @@
 package miw.upm.es.builder;
 
+import miw.upm.es.Professional;
+
 public class ProfessionalBuilder {
 	
 	private Professional professional;
+	long phone;
 	
 	public ProfessionalBuilder(long phone) {
+		this.phone = phone;
         this.professional = new Professional(phone);
     }
-	public ProfessionalBuilder() {
-        this(0);
-    }
-	
+		
 	public ProfessionalBuilder phone(long phone) {
 		professional.setPhone(phone);
 		return this;

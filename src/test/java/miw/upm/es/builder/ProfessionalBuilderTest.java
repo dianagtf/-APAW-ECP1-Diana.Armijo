@@ -4,15 +4,19 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import miw.upm.es.Professional;
+
 public class ProfessionalBuilderTest {
 	
 	@Test
     public void testLongLongString() {
-        Professional professional = new ProfessionalBuilder().phone(55555555).city(28905).type("Ciudad").build();
-
-        assertEquals(55555555, professional.getPhone());
+		long phone = 555555555;
+		
+		Professional professional = new ProfessionalBuilder(phone).city(28905).type("Madrid").build();
+	
+        assertEquals(phone, professional.getPhone());
         assertEquals(28905, professional.getCity());
-        assertEquals("Ciudad", professional.getType());
+        assertEquals("Madrid", professional.getType());
     }
 
 
